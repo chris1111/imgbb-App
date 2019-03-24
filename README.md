@@ -1,6 +1,7 @@
 # imgbb-App
 
 ### Application for Upload and share your images
+- This is an App run in OS X's WebView and take advantage of WebKit technologies
 
 #### Credit:
 - [chris1111](https://github.com/chris1111)
