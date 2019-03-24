@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>imgbb</title>
+  <body style="background-color:#2d313a;">
+
+  </style>
+  
+</head>
+<body>
+  
+  <script type="text/javascript" charset="utf-8">
+      macgap.notice.notify({title: 'imgbb', content: 'Hello World'});
+      
+      // Show the status bar by providing an image name or a title. The image name should be that of an image asset bundled with the application.
+      //macgap.statusBar.showWithImageName('IMAGE_NAME');
+      macgap.statusBar.showWithTitle('imgbb');
+      
+      // Or set the image name or title manually and show the status bar.
+      // macgap.statusBar.title = 'MacGap';
+      // macgap.statusBar.show();
+      
+      macgap.statusBar.statusMenu.getItem(2).setCallback(function () { macgap.statusBar.hide(); });
+  </script>
+  
+  <div align="center">
+  <h2><p style="color:green;">Bienvenue imgbb</p></h2>
+	 <a href="https://imgbb.com/upload"><img src="https://i.ibb.co/TPMj3dp/Terminal-fr.png" title="imgbb" alt="imgbb" /> </a>
+</div><a href="https://imgbb.com/upload"></a></div> 
+<div align="center">
+<h2><p style="color:green;">Application pour partage d'image sur macOS</p></h2>
+</div> 
+</body>
+</html>
