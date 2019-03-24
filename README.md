@@ -4,7 +4,7 @@
 - This is an App run in OS X's WebView and take advantage of WebKit technologies
 
 #### Credit:
-- [chris1111](https://github.com/chris1111)
+- [Created by chris1111](https://github.com/chris1111)
 - [Powered by MacGap](https://github.com/MacGapProject)
 - [Powered by imgbb](https://fr.imgbb.com)
 
