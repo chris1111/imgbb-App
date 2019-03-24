@@ -17,4 +17,4 @@
 
 
 
-#### Download ➤ [imgbb.dmg.zip ]()
+#### Download ➤ [imgbb.dmg.zip ](https://github.com/chris1111/imgbb-App/releases/tag/V1)
