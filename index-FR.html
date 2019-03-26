@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:#2d313a;">
+<style>
+#myProgress {
+  width: 100%;
+  background-color: #2d313a;
+}
+
+#myBar {
+  width: 0%;
+  height: 10px;
+  background-color: #00BFFF;
+}
+#content{
+    display:none;
+}
+
+</style>
+<div align="center">
+<h2><p style="color:green;">Bienvenue imgbb</p></h2>
+<div id="myProgress">
+  <div id="myBar"></div>
+</div>
+<br>
+<button onclick="move()">Ouvrir imgbb</button> 
+<br>
+<script>
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 1;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+      document.getElementById('content').style.display='block';
+    } else {
+      width++; 
+      elem.style.width = width + '%';
+      window.location.href = "https://imgbb.com/upload"; 
+    }
+  }
+}
+
+</script>
+<br>
+<div align="center">
+<img src="https://i.ibb.co/wrpDVx2/Terminal-fr.png" /> </a>
+</div><a href="https://imgbb.com/upload"></a></div> 
+<div align="center">
+<h2><p style="color:green;">Application pour partage d'image sur macOS</p></h2>
+</div> 
+
+</body>
+</html>
