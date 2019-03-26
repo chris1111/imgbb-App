@@ -1,34 +1,55 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>imgbb</title>
-  <body style="background-color:#2d313a;">
+<body style="background-color:#2d313a;">
+<style>
+#myProgress {
+  width: 100%;
+  background-color: #2d313a;
+}
 
-  </style>
-  
-</head>
-<body>
-  
-  <script type="text/javascript" charset="utf-8">
-      macgap.notice.notify({title: 'imgbb', content: 'Hello World'});
-      
-      // Show the status bar by providing an image name or a title. The image name should be that of an image asset bundled with the application.
-      //macgap.statusBar.showWithImageName('IMAGE_NAME');
-      macgap.statusBar.showWithTitle('imgbb');
-      
-      // Or set the image name or title manually and show the status bar.
-      // macgap.statusBar.title = 'MacGap';
-      // macgap.statusBar.show();
-      
-      macgap.statusBar.statusMenu.getItem(2).setCallback(function () { macgap.statusBar.hide(); });
-  </script>
-  
-  <div align="center">
-  <h2><p style="color:green;">Welcome imgbb</p></h2>
-	 <a href="https://imgbb.com/upload"><img src="https://i.ibb.co/wKYChsG/Terminal-en.png" title="imgbb" alt="imgbb" /> </a>
+#myBar {
+  width: 0%;
+  height: 10px;
+  background-color: #00BFFF;
+}
+#content{
+    display:none;
+}
+
+</style>
+<div align="center">
+<h2><p style="color:green;">Welcome imgbb</p></h2>
+<div id="myProgress">
+  <div id="myBar"></div>
+</div>
+<br>
+<button onclick="move()">Open imgbb</button> 
+<br>
+<script>
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 1;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+      document.getElementById('content').style.display='block';
+    } else {
+      width++; 
+      elem.style.width = width + '%';
+      window.location.href = "https://imgbb.com/upload"; 
+    }
+  }
+}
+
+</script>
+<br>
+<div align="center">
+<img src="https://i.ibb.co/wrpDVx2/Terminal-fr.png" /> </a>
 </div><a href="https://imgbb.com/upload"></a></div> 
 <div align="center">
 <h2><p style="color:green;">Application for image sharing on macOS</p></h2>
 </div> 
+
 </body>
 </html>
